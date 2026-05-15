@@ -4,24 +4,17 @@ export default {
   type: 'document',
   fields: [
     {
-      name: 'title',
-      title: 'Title',
-      type: 'string',
-    },
-    {
       name: 'category',
       title: 'Category',
       type: 'string',
-    },
-    {
-      name: 'image',
-      title: 'Image',
-      type: 'image',
-    },
-    {
-      name: 'featured',
-      title: 'Featured',
-      type: 'boolean',
-    },
+      options: {
+        list: [
+          {title: 'Cakes', value: 'cakes'},
+          {title: 'Desserts', value: 'desserts'},
+          {title: 'Pancake Station', value: 'pancake-station'},
+          {title: 'Weddings', value: 'weddings'},
+        ],
+      },
+}
   ],
 }
