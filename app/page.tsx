@@ -126,41 +126,31 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* GALLERY */}
-      <section
-        id="gallery"
-        className="bg-[#cfd7e2] py-32 px-6 text-[#202b45]"
-      >
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20">
-            <p className="uppercase tracking-[0.4em] text-sm text-[#202b45]/60 mb-6">
-              Our Work
-            </p>
+      {/* GALLERY CTA */}
+      <section className="bg-[#cfd7e2] py-24 px-6 text-center text-[#202b45]">
 
-            <h2 className="heading-font text-5xl md:text-7xl mb-8">
-              Cakes That Steal
-              <br />
-              The Spotlight
-            </h2>
+        <p className="uppercase tracking-[0.4em] text-sm text-[#202b45]/60 mb-6">
+          Our Work
+        </p>
 
-            <p className="max-w-3xl mx-auto text-lg leading-8 text-[#202b45]/70">
-              Elegant wedding cakes, themed birthday creations and luxury
-              dessert styling designed to become the centrepiece of every
-              celebration.
-            </p>
-          </div>
+        <h2 className="heading-font text-5xl md:text-7xl mb-8">
+          Cakes That Steal
+          <br />
+          The Spotlight
+        </h2>
 
-          <div className="columns-1 md:columns-3 gap-6 space-y-6">
-            {products.map((product: any) => (
-              <img
-                key={product._id}
-                src={urlFor(product.image).url()}
-                alt={product.title}
-                className="w-full rounded-[2rem] shadow-xl hover:scale-[1.02] transition duration-300"
-              />
-            ))}
-          </div>
-        </div>
+        <p className="max-w-3xl mx-auto text-lg leading-8 text-[#202b45]/70 mb-12">
+          Explore our full collection of handcrafted cakes, dessert tables,
+          luxury event setups and unforgettable creations.
+        </p>
+
+        <a
+          href="/gallery"
+          className="inline-block px-10 py-5 rounded-full bg-[#202b45] text-[#f8f8f8] hover:bg-[#8992a3] transition duration-300"
+        >
+          View Full Gallery
+        </a>
+
       </section>
 
       {/* DESSERT TABLE SETUPS */}
@@ -346,6 +336,11 @@ export default async function HomePage() {
             >
               WhatsApp
             </a>
+          </div>
+          <div className="flex justify-center gap-8 mt-16 text-sm uppercase tracking-[0.2em] text-[#202b45]/60">
+            <a href="/">Home</a>
+            <a href="/gallery">Gallery</a>
+            <a href="/terms">Terms & Conditions</a>
           </div>
         </div>
       </section>
