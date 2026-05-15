@@ -78,9 +78,7 @@ export default async function HomePage() {
                 />
 
                 <div className="p-8">
-                  <h3 className="heading-font text-3xl mb-3">
-                    {product.title}
-                  </h3>
+
 
                   <p className="text-[#202b45]/70 uppercase tracking-[0.2em] text-sm">
                     {product.category}

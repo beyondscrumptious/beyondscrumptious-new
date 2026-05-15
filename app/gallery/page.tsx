@@ -7,7 +7,6 @@ async function getProducts() {
   return client.fetch(`
     *[_type == "product"] | order(_createdAt desc){
       _id,
-      title,
       category,
       image
     }
@@ -50,9 +49,6 @@ export default async function GalleryPage() {
               />
 
               <div className="p-6 text-[#202b45]">
-                <h2 className="heading-font text-2xl mb-2">
-                  {product.title}
-                </h2>
 
                 <p className="uppercase tracking-[0.2em] text-sm text-[#202b45]/60">
                   {product.category}
