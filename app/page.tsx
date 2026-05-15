@@ -38,11 +38,15 @@ export default async function HomePage() {
             Luxury Dessert Experiences
           </p>
 
-          <h1 className="text-6xl md:text-8xl font-light leading-tight mb-6">
+          <h1 className="logo-font text-6xl md:text-8xl leading-tight mb-6">
             Beyond
             <br />
             Scrumptious
           </h1>
+
+          <p className="text-lg text-white/80 max-w-2xl mx-auto">
+            Luxury eggless cakes, dessert tables and unforgettable event experiences.
+          </p>
         </div>
       </section>
 
@@ -56,7 +60,7 @@ export default async function HomePage() {
             {products.map((product: any) => (
               <div
                 key={product._id}
-                className="rounded-[2rem] overflow-hidden bg-white shadow-lg"
+                className="rounded-[2rem] overflow-hidden bg-white shadow-lg hover:-translate-y-2 transition duration-300"
               >
                 <img
                   src={urlFor(product.image).url()}

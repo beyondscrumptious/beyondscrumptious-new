@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'KonTiki';
+  src: url('/fonts/Kon Tiki Enchanted JF Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -8,4 +15,12 @@ body {
   background: #111111;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-font {
+  font-family: 'KonTiki', serif;
+}
+
+.heading-font {
+  font-family: var(--font-heading);
 }
