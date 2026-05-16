@@ -3,6 +3,8 @@ import WhatsAppButton from '../../components/WhatsAppButton'
 import { client } from '../../sanity/lib/client'
 import { urlFor } from '../../sanity/lib/image'
 
+export const revalidate = 0
+
 async function getProducts() {
   return client.fetch(`
     *[_type == "product"] | order(_createdAt desc){

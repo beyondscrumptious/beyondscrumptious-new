@@ -3,6 +3,8 @@ import {client} from '../sanity/lib/client'
 import {urlFor} from '../sanity/lib/image'
 import WhatsAppButton from '../components/WhatsAppButton'
 
+export const revalidate = 0
+
 async function getProducts() {
   return client.fetch(`
     *[_type == "product" && featured == true][0...6]{
@@ -116,7 +118,7 @@ export default async function HomePage() {
 
           <div className="rounded-[2rem] overflow-hidden shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?q=80&w=1600&auto=format&fit=crop"
+              src="/images/featurecake.jpg"
               alt="Luxury Cakes"
               className="w-full h-full object-cover"
             />
@@ -132,7 +134,7 @@ export default async function HomePage() {
         </p>
 
         <h2 className="heading-font text-5xl md:text-7xl mb-8">
-          Cakes That Steal
+          Desserts That Steal
           <br />
           The Spotlight
         </h2>
@@ -183,7 +185,7 @@ export default async function HomePage() {
 
           <div className="rounded-[2rem] overflow-hidden shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1600&auto=format&fit=crop"
+              src="/images/Sagai Ceremony - 131.jpg"
               alt="Dessert Table Setup"
               className="w-full h-full object-cover"
             />
@@ -197,7 +199,7 @@ export default async function HomePage() {
 
           <div className="rounded-[2rem] overflow-hidden shadow-2xl order-2 md:order-1">
             <img
-              src="https://images.unsplash.com/photo-1519676867240-f03562e64548?q=80&w=1600&auto=format&fit=crop"
+              src="/images/otgpic.jpg"
               alt="Live Dessert Station"
               className="w-full h-full object-cover"
             />
@@ -236,11 +238,11 @@ export default async function HomePage() {
               </a>
 
               <a
-                href="https://instagram.com/beyond.scrumptious"
+                href="/live-desserts"
                 target="_blank"
                 className="px-8 py-4 border border-[#202b45]/20 rounded-full hover:bg-[#8992a3] hover:text-white transition"
               >
-                View Instagram
+                Learn More
               </a>
             </div>
           </div>

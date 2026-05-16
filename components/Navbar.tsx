@@ -29,6 +29,14 @@ export default function Navbar() {
             Gallery
           </a>
 
+          <a href="/live-desserts">
+            Live Desserts
+          </a>
+
+          <a href="/faq">
+            FAQ
+          </a>
+
           <a href="/#desserts">
             Desserts
           </a>
@@ -40,6 +48,7 @@ export default function Navbar() {
           <a href="/terms">
             Terms
           </a>
+
         </div>
 
         {/* MOBILE BUTTON */}
@@ -49,6 +58,7 @@ export default function Navbar() {
         >
           {open ? <FaTimes /> : <FaBars />}
         </button>
+
       </div>
 
       {/* MOBILE MENU */}
@@ -63,6 +73,14 @@ export default function Navbar() {
             Gallery
           </a>
 
+          <a href="/live-desserts">
+            Live Desserts
+          </a>
+
+          <a href="/faq">
+            FAQ
+          </a>
+
           <a href="/#desserts">
             Desserts
           </a>
@@ -74,6 +92,7 @@ export default function Navbar() {
           <a href="/terms">
             Terms
           </a>
+
         </div>
       )}
     </nav>
